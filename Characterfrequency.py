@@ -1,6 +1,6 @@
 # Character Frequency Counting in Python
 
-# 1️⃣Using a plain dictionary
+# Using a plain dictionary
 def char_frequency_dict(s):
     freq = {}
     for char in s:
@@ -10,19 +10,19 @@ def char_frequency_dict(s):
             freq[char] = 1
     return freq
 
-# 2️⃣ Using dict.get()
+#  Using dict.get()
 def char_frequency_dict_get(s):
     freq = {}
     for char in s:
         freq[char] = freq.get(char, 0) + 1
     return freq
 
-# 3️⃣ Using collections.Counter
+#  Using collections.Counter
 from collections import Counter
 def char_frequency_counter(s):
     return dict(Counter(s))
 
-# 4️⃣ Using str.count() method
+# Using str.count() method
 def char_frequency_count_method(s):
     freq = {}
     for char in set(s):
